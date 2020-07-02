@@ -1,0 +1,10 @@
+#homeDiv{
+    position: absolute;
+    left: 260px;
+    font-size: 30px;
+}
+
+#homeSpan{
+    color: #009688;
+    font-size: 45px;
+}

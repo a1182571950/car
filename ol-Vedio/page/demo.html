@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>分页插件</title>
+</head>
+<body>
+    
+    <div>
+            <h1>>>使用说明：</h1>
+        <pre>
+                $('选择器').pagination({
+                          total   : 100,       //<span style="color:Red">必填，数据总共有多少条</span>
+                          doPaging :  function(page,perPage){}, // <span style="color:Red">必填，点击分页后的回调.改回调有2个参数，分别是当前页码和每页数量</span>
+                          perPage: 10 ,   //可选， 每页显示多少条记录, 默认10
+                          showPages : 7 , //可选，总共要显示多少个页码。 默认7
+                          isShowFirstPage : false, //可选，是否显示首页按钮 默认 false
+                          isShowLastPage ： false, //可选，是否显示最后页按钮 默认 false  
+                          isShowTotalNum : false, //可选，是否显示全部数量 默认 false
+                          isShowPageItems : true, //可选，是否显示分页按钮 默认 true
+                          isShowPrev : true,     //可选，是否显示上一页按钮 默认 true
+                          isShowNext :true ,     //可选，是否显示下一页按钮 默认 true
+                          isShowSelect : true    //可选，是否显示页码选择器 默认 true
+                     })            
+        </pre>
+    </div>
+
+
+    <h3>基础功能 </h3>
+    <pre> JS代码：
+            $('#demo').pagination({
+                total:100,
+                doPaging:function(page,num){
+                    $('.test').eq(0).html(`当前页是${page}每页数量${num}`);
+                }
+            })
+    </pre>
+    <div class="test"></div>
+   
+    <div id="demo"></div>
+
+    <h3>每页数量，显示页面数量 </h3>
+    <pre>
+        JS代码:
+        $('#demo1').pagination({
+            total:100,
+            perPage:3,
+            showPages: 9,
+            doPaging:function(page,num){
+                $('.test').eq(1).html(`当前页是${page}每页数量${num}`);
+            },
+          
+        })
+       
+
+    </pre>
+    <div class="test"></div>
+    <div>配置  perPage(每页数量) : 3  默认值:10 ,  showPages(显示多少个页) : 9  默认值:7 </div>
+    <div id="demo1"></div>
+
+    <h3>显示 首页、最后一页 </h3>
+    <pre>
+        JS代码：
+        $('#demo2').pagination({
+            total:100,
+            isShowFirstPage : true,
+            isShowLastPage : true,
+            doPaging:function(page,num){
+                $('.test').eq(2).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+       
+    </pre>
+    <div class="test"></div>
+    <div>配置  isShowFirstPage : true  默认值:false ,  isShowLastPage: true  默认值:false</div>
+    <div id="demo2"></div>
+   
+    <h3>隐藏 页码下拉框 </h3>
+    <pre>
+        JS代码：
+        $('#demo3').pagination({
+            total:100,
+            isShowSelect  : false,
+            doPaging:function(page,num){
+                $('.test').eq(3).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+        
+    </pre>
+    <div class="test"></div>
+    <div>配置  isShowSelect : false  默认值: true</div>
+    <div id="demo3"></div>
+   
+
+    <h3>隐藏 上一页，下一页 </h3>
+    <pre>
+        JS代码：
+        $('#demo4').pagination({
+            total:100,
+            isShowPrev  : false,
+            isShowNext : false,
+            doPaging:function(page,num){
+                $('.test').eq(4).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+       
+    </pre>
+    <div class="test"></div>
+    <div>配置  isShowPrev: false  默认值: true ,  isShowNext : false   默认值:true</div>
+    <div id="demo4"></div>
+
+    <h3>隐藏 页码 </h3>
+    <pre>
+        JS代码：
+        $('#demo5').pagination({
+            total:100,
+            isShowPageItems  : false,
+            doPaging:function(page,num){
+                $('.test').eq(5).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+    </pre>
+    <div class="test"></div>
+    <div>配置  isShowPageItems: false  默认值: true </div>
+    <div id="demo5"></div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="pagination-jquery.js"></script>
+    <script>
+        $('#demo').pagination({
+            total:100,
+            doPaging:function(page,num){
+                $('.test').eq(0).html(`当前页是${page}每页数量${num}`);
+            }
+        })
+        $('#demo1').pagination({
+            total:100,
+            perPage:3,
+            showPages: 9,
+            doPaging:function(page,num){
+                $('.test').eq(1).html(`当前页是${page}每页数量${num}`);
+            },
+          
+        })
+        $('#demo2').pagination({
+            total:100,
+            isShowFirstPage : true,
+            isShowLastPage : true,
+            doPaging:function(page,num){
+                $('.test').eq(2).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+        $('#demo3').pagination({
+            total:100,
+            isShowSelect  : false,
+            doPaging:function(page,num){
+                $('.test').eq(3).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+        $('#demo4').pagination({
+            total:100,
+            isShowPrev  : false,
+            isShowNext : false,
+            doPaging:function(page,num){
+                $('.test').eq(4).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+        $('#demo5').pagination({
+            total:100,
+            isShowPageItems  : false,
+            doPaging:function(page,num){
+                $('.test').eq(5).html(`当前页是${page}每页数量${num}`);
+            },
+           
+        })
+
+        
+    </script>
+</body>
+</html>

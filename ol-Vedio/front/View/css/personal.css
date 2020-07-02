@@ -1,0 +1,46 @@
+#perDiv{
+    background-color: white;
+    position: absolute;
+    top:-10px;
+    left: 20px;
+    width: 1000px;
+    height: 850px;
+}
+
+.per_li{
+    font-size: 20px !important;
+}
+
+#myPerDiv{
+    font-size: 15px;
+}
+#myPerDiv div{
+    margin: 20px;
+}
+#myVip{
+    color: #FF5722;
+}
+#myMoney{
+    color: red;
+}
+.myPerBut{
+    float: right;
+    position: relative;
+    right: 600px;
+}
+#myPerTime{
+    color: lightslategrey;
+
+}
+
+.input_{
+    border: 1px solid lightgray !important;
+}
+
+#vip_span{
+    color: red;
+}
+.playImg{
+    width: 100px;
+    height: 70px;
+}

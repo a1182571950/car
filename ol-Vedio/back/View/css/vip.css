@@ -1,0 +1,12 @@
+#add_div1{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    display: none;
+}
+.addVIP_inp{
+    width: 90px;
+}
+.addVIP_div{
+    margin-top: 10px;
+}

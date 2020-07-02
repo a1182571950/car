@@ -1,0 +1,13 @@
+select{
+    border: 1px solid black;
+}
+
+.sel_div{
+    margin:20px !important;
+    font-size: 18px;
+}
+
+#button1{
+    position: relative;
+    bottom:5px;
+}

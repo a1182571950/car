@@ -1,0 +1,16 @@
+#search_inp{
+    border: 1px solid #b2b2b2;
+    height: 28px;
+}
+td{
+    padding: 10px 28px !important;
+}
+
+#searchDiv {
+    position: relative;
+    left: 670px;
+}
+
+#reSpan{
+    color: red;
+}

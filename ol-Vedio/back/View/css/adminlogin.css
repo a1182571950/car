@@ -1,0 +1,39 @@
+
+body{
+    background-image: url("../../../img/thumb-1920-936850.jpg");
+}
+h2{
+    position: absolute;
+    bottom: 550px;
+    font-size: 60px;
+    margin-left: 330px;
+    color: lightyellow;
+}
+h2 span{
+    font-size: 75px;
+    color: #009688;
+}
+#login-div1{
+  /* border: 1px crimson solid;*/
+    margin-top: 370px;
+    margin-left: 400px;
+    color:rgb(16,147,225) ;
+    width: 500px;
+    text-align: center;
+}
+#login-div1 div{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#login-div1 h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.code_div span{
+    font-size: 13px !important;
+}

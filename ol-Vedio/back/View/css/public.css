@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.safe-width{
+    width: 1300px;
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px seagreen solid;*/
+}
+.inline-block{
+    display: inline-block;
+}
+
+h2{
+    color: #009688;
+    margin-bottom: 10px;
+}
+h2 span{
+    color: black;
+}

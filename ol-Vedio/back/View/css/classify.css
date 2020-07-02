@@ -1,0 +1,42 @@
+#classify_butDiv{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+#classify_div{
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+#classify_sel{
+    border: 2px solid #5FB878;
+    border-radius: 10px;
+    width: 250px;
+    height: 160px;
+    padding: 40px 40px;
+    position: absolute;
+    left: 500px;
+    bottom: 200px;
+    display: none;
+}
+#classify_sel>div{
+    margin-bottom: 20px;
+}
+#classify_int{
+    border: 1px solid black;
+    width: 130px;
+}
+#classify_sel select{
+    border: 1px solid black;
+    width: 130px;
+}
+#classify_submit{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+
+#classify_close{
+    position: absolute;
+    left: 300px;
+    top:10px;
+}

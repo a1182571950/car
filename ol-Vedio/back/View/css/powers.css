@@ -1,0 +1,26 @@
+#role_div{
+    margin-top: 50px;
+    width: 600px;
+    position: absolute;
+}
+
+#powers_div{
+    position: absolute;
+    left: 650px;
+    display: none;
+    /*border: 1px solid black;*/
+    padding: 10px;
+}
+
+#power_close{
+    position: absolute;
+    left: 180px;
+}
+
+#powersG_but{
+    display: none;
+}
+
+#addRole_span{
+    color:red;
+}
